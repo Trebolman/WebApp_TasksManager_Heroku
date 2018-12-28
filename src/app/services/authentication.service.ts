@@ -29,8 +29,8 @@ export class AuthService {
   private token:string;
 
   // uri
-  // private uri:string = "/";
-  private uri:string = "http://localhost:3000/";
+  private uri:string = "/";
+  // private uri:string = "http://localhost:3000/";
   constructor(private http:HttpClient, private router:Router) { }
 
   // metodos

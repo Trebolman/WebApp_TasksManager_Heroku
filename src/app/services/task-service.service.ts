@@ -15,8 +15,8 @@ export interface Task{
 })
 export class TasksService {
   // atributos
-  // public uri:string = "/";
-  public uri:string = "http://localhost:3000/";
+  public uri:string = "/";
+  // public uri:string = "http://localhost:3000/";
   constructor(private _http:HttpClient) { }
 
   // metodos
