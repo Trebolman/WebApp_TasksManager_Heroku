@@ -50,7 +50,7 @@
                   <button mdBtn class="btn btn-success p-0 pl-2 pr-1 mb-2" (click)="changeStateTask(i)" *ngIf="task.state == 'Hecho'">{{task.state}}</button>
               </div>
               <div class="col-md-4 col-sm-4">
-                  <button mdBtn color="primary"  class="btn btn-info p-0 pl-2 pr-1 mb-2" data-toggle="modal" data-target="#modalTaskEdit"  (click)="editFrame.show()" mdbWavesEffect (mouseover)="getTask(i)">Editar</button>
+                  <button mdBtn color="primary"  class="btn btn-info p-0 pl-2 pr-1 mb-2" data-toggle="modal" data-target="#modalTaskEdit"  (click)="editFrame.show()" mdbWavesEffect (mousedown)="getTask(i)">Editar</button>
               </div>
               <div class="col-md-4 col-sm-4">
                   <button mdBtn color="primary" class="btn btn-info p-0 pl-2 pr-1 mb-2" (click)="removeTask(i)">Eliminar</button>

@@ -85,6 +85,8 @@ export class TasksComponent implements OnInit {
     this._taskService.editTask(this.user.username,this.task, this.index).subscribe((response)=>{
       console.log(response);
       // this.getTasks();
+      this.task.name = "";
+      this.task.description = "";
     });
   }
 
