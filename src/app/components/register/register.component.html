@@ -1,0 +1,31 @@
+<!-- Default form register -->
+
+<div class="row d-flex justify-content-center">
+  <div class="col-sm-12 col-md-8 col-lg-5">
+    <div class="alert alert-danger text-center" role="alert">
+      <strong>{{mensaje}}</strong>
+    </div>
+   
+    <form class="text-center border border-light p-5" (submit)="register()">
+
+      <p class="h4 mb-4">Registro</p>
+
+      <!-- First name -->
+      <input type="text" [(ngModel)]="credentials.username" name="username" class="form-control mb-4" placeholder="Username">
+
+      <!-- E-mail -->
+      <input type="email" [(ngModel)]="credentials.email" name="email" class="form-control mb-4" placeholder="E-mail">
+
+      <!-- Password -->
+      <input type="password" [(ngModel)]="credentials.password" name="password" class="form-control" placeholder="Password">
+
+      <button class="btn btn-success btn-block my-4">Registrar</button>
+
+      <p>Si ya esta registrado</p>
+      <!-- <button class="bg-transparent" routerLink="/login">Ingresa</button> -->
+      <a routerLink="/login">Ingresar</a>
+    </form>
+  </div>
+</div>
+
+<!-- Default form register -->
